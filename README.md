@@ -1,6 +1,6 @@
 # 📷 Vladogram
 
-Welcome to **Vladogram** – a modern blog platform built with **Python/Django** on the backend and **React** on the frontend.  
+Welcome to **Vladogram** – a blog platform built with **Python/Django** on the backend and **React** on the frontend.  
 You can create posts, search for interesting content, visit other users’ pages, and leave comments!
 
 ---
