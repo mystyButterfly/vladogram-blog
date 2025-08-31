@@ -1,0 +1,141 @@
+.profile-detail {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  margin: 20px auto 40px auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.profile-detail h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
+/* Rows with inputs + update button */
+.profile-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+.profile-row-password input {
+  margin-right: 10px;
+}
+
+/* Inputs */
+.profile-row input {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #eeeeee;
+  font-size: 14px;
+}
+
+/* Update buttons */
+.profile-row button {
+  background-color: #b6a9df;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.profile-comments-container {
+  width: 90%;
+  margin-inline: auto;
+  background-color: rgb(235, 235, 235);
+  border-radius: 0 0 10px 10px;
+  padding: 20px;
+}
+
+.profile-comment div {
+  display: flex;
+  justify-content: space-between;
+}
+.profile-comment span {
+  color: grey;
+}
+.profile-comment button {
+  background-color: #d37070;
+  color: white;
+  border: none;
+  padding: 4px 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+.profile-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .profile-detail {
+    background-color: white;
+    padding: 10px;
+    border-radius: 12px;
+    width: 100%;
+    margin: 10px auto 20px auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  .profile-detail h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+
+  .profile-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 7px;
+    margin-top: 20px;
+  }
+
+  .profile-row-password {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .profile-row-password input {
+    margin-right: 0;
+  }
+
+  .profile-row input,
+  .profile-row button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .profile-row button {
+    padding: 10px;
+  }
+
+  .profile-comments-container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .profile-posts {
+    gap: 15px;
+  }
+
+  .profile-detail h2 {
+    font-size: 1.2rem;
+  }
+
+  .profile-comment div {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .profile-comment button {
+    align-self: flex-start;
+  }
+}

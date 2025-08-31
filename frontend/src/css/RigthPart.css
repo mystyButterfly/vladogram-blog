@@ -1,0 +1,48 @@
+/* Right Sidebar */
+.right-part {
+  width: 200px;
+  padding: 20px;
+  background-color: #fff;
+  border-left: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+.right-part h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.authors-list > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.authors-list span {
+  font-weight: 500;
+}
+
+.authors-list button {
+  background: none;
+  color: #7c7be0;
+  border: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .right-part {
+    width: fit-content;
+    max-width: 200px;
+    max-height: 60vh;
+    padding: 5px;
+    background-color: #ffffff00;
+    border-left: unset;
+    overflow-y: auto;
+    border: 1px solid rgba(128, 128, 128, 0.467);
+    border-radius: 3px;
+    position: absolute;
+    top:10rem;
+    left: 5px;
+  }
+}

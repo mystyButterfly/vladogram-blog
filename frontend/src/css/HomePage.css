@@ -1,0 +1,135 @@
+
+.home-stories {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.home-stories button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #e0dff2;
+  cursor: pointer;
+}
+
+/* Add Post */
+.home-add-post {
+  background-color: rgba(255, 255, 255, 0.232);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.116);
+}
+.home-add-post input{
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+.home-add-post textarea {
+  width: 100%;
+  border-radius: 8px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  resize: none;
+  font-size: 14px;
+}
+
+.post-btn-wrapper {
+  display: flex;
+  justify-content: flex-end; /* This moves the button to the right */
+  padding-right: 10px;
+}
+
+.home-add-post button {
+  margin-top: 5px;
+  background-color: #b6a9df;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.next-btn{
+  margin-top: 5px;
+  background-color: #b6a9df;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-window {
+  position: relative;
+  width: 400px;
+  max-width: 90%;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.modal-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background-color: #3498db;
+  transition: width 0.1s linear;
+}
+
+.modal-content {
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.comments-window{
+  position: relative;
+  width: 90%;
+  height: 90%;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  overflow-y: auto;
+}
+.comments-window-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #e6d6f3;  /* soft lila */
+  color: #5c2671;             /* deep purple text */
+  border: none;
+  border-radius: 4px;
+  padding: 6px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.comments-window-close:hover {
+  background-color: #d8c1eb;  /* slightly darker on hover */
+}
+
+
+

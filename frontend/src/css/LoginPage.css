@@ -1,0 +1,128 @@
+/* General body styles */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f2effa;
+  color: #333;
+}
+
+/* Login main container */
+.login-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px);
+  gap: 60px;
+  padding: 20px 20px 0 20px;
+}
+
+/* Image style */
+.login-main img {
+  width: 300px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Right section */
+.login-main > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  min-width: 250px;
+}
+
+/* Title */
+.login-main h2 {
+  font-family: "Rochester", cursive, sans-serif;
+  font-size: 40px;
+  color: #7e7ea6;
+  margin-bottom: 20px;
+  user-select: none;
+}
+
+/* Inputs */
+.login-main input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+  background-color: #dddcdc;
+  color: #4f4f7f;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Login button */
+.login-main button {
+  width: 100%;
+  padding: 10px;
+  background-color: #819fff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-main button:hover {
+  background-color: #6e89db;
+}
+
+/* Register link and "or" divider */
+.login-main .divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 10px;
+  color: #999;
+  user-select: none;
+}
+
+.login-main .divider::before,
+.login-main .divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #bbb;
+}
+
+.login-main .register {
+  color: #5a64e8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Forgot password */
+.login-main .forgot {
+  font-size: 14px;
+  color: #222;
+  text-align: center;
+}
+
+.register-container {
+  border-radius: 10px;
+  padding: 20px 40px;
+  border: 1px solid rgba(0, 0, 0, 0.389);
+}
+
+.error {
+  color: red;
+}
+@media only screen and (max-width: 768px) {
+  /* Login main container */
+  .login-main {
+    flex-direction: column;
+  }
+
+  /* Image style */
+  .login-main img {
+    width: 200px;             
+    height: 200px;            
+    object-fit: cover;        
+    margin-inline: auto;
+    margin-inline: auto;
+  }
+}

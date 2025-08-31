@@ -1,0 +1,27 @@
+
+/* Footer */
+.login-footer {
+  height: 60px;
+  
+  background-color: transparent;
+  font-size: 14px;
+  color: #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.login-footer span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-footer a {
+  text-decoration: none;
+  color: #666;
+  transition: color ease 0.3s;
+}
+.login-footer a:hover {
+  color: #989696;
+}
