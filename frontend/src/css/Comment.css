@@ -1,0 +1,35 @@
+.comment-component{
+    padding: 10px;
+    width: 80%;
+    margin-inline: auto ;
+    border-radius: 5px;
+    border: 1px solid rgba(135, 135, 162, 0.641);
+    background-color: white;
+    margin-bottom: 3px;
+}
+.comment-component>div{
+    display: flex;
+    justify-content: space-between;
+}
+.comment-component span{
+    color: grey;
+    font-size: smaller;
+}
+.comment-component p{
+    text-align: left;
+    margin-top: 10px;
+}
+.delete-comment-btn{
+    background-color: #d37070;
+    color: white;
+    border: none;
+    padding: 2px 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    
+    white-space: nowrap;
+    margin: 5px;
+}
+.delete-comment-btn:hover{
+    background-color: #c64848;
+}
